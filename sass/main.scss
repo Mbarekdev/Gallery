@@ -1,0 +1,51 @@
+@charset 'utf-8';
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: auto;
+  font-family: $fontT;
+  background: linear-gradient(40deg, $BColorpink, $Colorblue);
+}
+
+header {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: 0 0 1px 0 #000;
+
+    .logo {
+      font-size: 1rem;
+      font-weight: 800;
+      text-transform: uppercase;
+
+      span {
+        font-weight: 900;
+        font-size: 2rem;
+      }
+    }
+
+    .links a {
+      padding: 0 1rem;
+      text-decoration: none;
+      color: #000;
+      font-size: 1rem;
+      font-weight: 800;
+      text-transform: uppercase;
+
+      .links a:hover {
+        border-top: 2px solid $BColorpink;
+      }
+    }
+  }
+}
