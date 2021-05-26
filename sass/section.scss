@@ -1,0 +1,141 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  width: 100%;
+  height: auto;
+  padding: 4rem 10rem;
+  grid-auto-flow: dense;
+
+  & .title {
+    padding: 1rem;
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      padding: 1.4rem 0;
+    }
+  }
+
+  & .items {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto auto auto auto;
+    & .item .text {
+      position: relative;
+      bottom: 250px;
+      padding: 1rem;
+      background: #000000d9;
+      color: white;
+      opacity: 0;
+      animation: out linear alternate backwards 0.5s;
+      width: 142px;
+      height: 34px;
+      overflow: hidden;
+    }
+
+    & .item:hover .text {
+      opacity: 1;
+      transition: all 0.5s;
+      animation: in linear alternate forwards 0.5s;
+    }
+
+    & .item img {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      object-fit: cover;
+      animation: out linear alternate backwards 0.3s;
+
+      &:hover {
+        animation: in linear alternate forwards 0.3s;
+        cursor: pointer;
+      }
+    }
+
+    & .item:nth-child(1) {
+      grid-column-start: span 1;
+      grid-row-start: span 1;
+      order: 0;
+    }
+    & .item:nth-child(2) {
+      grid-column-start: span 1;
+      grid-row-start: span 1;
+      order: 1;
+    }
+    & .item:nth-child(3) {
+      grid-column-start: span 2;
+      grid-row-start: span 2;
+      order: 3;
+    }
+    & .item:nth-child(4) {
+      grid-column-start: span 2;
+      grid-row-start: span 1;
+      order: 2;
+    }
+    & .item:nth-child(5) {
+      grid-column-start: span 2;
+      grid-row-start: span 1;
+      order: 5;
+    }
+    & .item:nth-child(6) {
+      grid-column-start: span 2;
+      grid-row-start: span 1;
+      order: 6;
+    }
+    & .item:nth-child(7) {
+      grid-column-start: span 2;
+      grid-row-start: span 2;
+      order: 7;
+    }
+    & .item:nth-child(8) {
+      grid-column-start: span 1;
+      grid-row-start: span 1;
+      order: 8;
+    }
+    & .item:nth-child(9) {
+      grid-column-start: span 2;
+      grid-row-start: span 1;
+      order: 9;
+    }
+    & .item:nth-child(10) {
+      grid-column-start: span 1;
+      grid-row-start: span 1;
+      order: 10;
+    }
+    & .item:nth-child(11) {
+      grid-column-start: span 2;
+      grid-row-start: span 1;
+      order: 11;
+    }
+    & .item:nth-child(12) {
+      grid-column-start: span 2;
+      grid-row-start: span 1;
+      order: 12;
+    }
+  }
+}
+
+@keyframes in {
+  from {
+    transform: rotate(10deg);
+    transform: scale(1);
+  }
+  to {
+    transform: rotate(0deg);
+    transform: scale(1.025);
+  }
+}
+
+@keyframes out {
+  from {
+    transform: scale(1.025);
+  }
+  to {
+    transform: scale(1);
+  }
+}
