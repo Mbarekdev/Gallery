@@ -400,4 +400,12 @@ header nav .collapse_menu span:nth-child(3) {
     grid-row-start: span 1;
   }
 }
+
+footer .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
 /*# sourceMappingURL=main.css.map */
