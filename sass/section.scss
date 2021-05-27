@@ -25,23 +25,26 @@
     display: grid;
     grid-gap: 20px;
     grid-template-columns: auto auto auto auto auto auto;
-    & .item .text {
+
+    & .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    & .item .text span {
       position: relative;
-      bottom: 250px;
-      padding: 1rem;
-      background: #000000d9;
-      color: white;
-      opacity: 0;
-      animation: out linear alternate backwards 0.5s;
-      width: 142px;
-      height: 34px;
-      overflow: hidden;
+      bottom: 47px;
+      text-align: center;
+      color: #fff;
+      background: #000;
     }
 
     & .item:hover .text {
       opacity: 1;
       transition: all 0.5s;
-      animation: in linear alternate forwards 0.5s;
+      overflow: visible;
+      height: 80px;
     }
 
     & .item img {
