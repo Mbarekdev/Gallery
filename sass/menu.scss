@@ -64,7 +64,7 @@ header {
   header nav {
     justify-content: space-between;
     .links {
-      background: #b4c4e4;
+      background: #000;
       display: none;
       flex-direction: column;
       justify-content: center;
@@ -77,7 +77,7 @@ header {
       a {
         font-size: 1rem;
         padding: 0.8rem 0;
-        color: #000;
+        color: #fff;
       }
     }
     .collapse_menu {

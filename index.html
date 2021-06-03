@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="img/flaicon.png" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Gallery pictures</title>
+    <style></style>
   </head>
   <body>
     <header>
@@ -20,30 +21,142 @@
       </nav>
     </header>
     <main class="container">
-      <div class="title">
+      <div>
         <h1>Marouane Gallery</h1>
         <p>Some amazing pictures token by the best world photographer</p>
       </div>
-      <section class="items">
-        <div class="item"><img src="img/image001.jpg" alt="" /></div>
-        <div class="item"><img src="img/image002.jpg" alt="" /></div>
-        <div class="item"><img src="img/image003.jpg" alt="" /></div>
-        <div class="item"><img src="img/image004.jpg" alt="" /></div>
-        <div class="item"><img src="img/image005.jpg" alt="" /></div>
-        <div class="item"><img src="img/image006.jpg" alt="" /></div>
-        <div class="item"><img src="img/image007.jpg" alt="" /></div>
-        <div class="item"><img src="img/image008.jpg" alt="" /></div>
-        <div class="item"><img src="img/image009.jpg" alt="" /></div>
-        <div class="item"><img src="img/image010.jpg" alt="" /></div>
-        <div class="item"><img src="img/image011.jpg" alt="" /></div>
-        <div class="item"><img src="img/image012.jpg" alt="" /></div>
-      </section>
+
+      <div class="grid">
+        <div class="grid-item" src="img/image001.jpg">
+          <img class="image" src="img/image001.jpg" alt=" Image name" />
+          <div class="text"><span>Image name</span></div>
+        </div>
+        <div class="grid-item" src="img/image002.jpg">
+          <img class="image" src="img/image002.jpg" alt=" Image name" />
+          <div class="text"><span>Image name</span></div>
+        </div>
+        <div class="grid-item" src="img/image003.jpg">
+          <img class="image" src="img/image003.jpg" alt=" Image name" />
+          <div class="text">
+            <span>Image name</span>
+          </div>
+        </div>
+        <div class="grid-item" src="img/image004.jpg">
+          <img class="image" src="img/image004.jpg" alt=" Image name" />
+          <div class="text">
+            <span>Image name</span>
+          </div>
+        </div>
+        <div class="grid-item" src="img/image005.jpg">
+          <img class="image" src="img/image005.jpg" alt=" Image name" />
+          <div class="text">
+            <span>Image name</span>
+          </div>
+        </div>
+        <div class="grid-item" src="img/image006.jpg">
+          <img class="image" src="img/image006.jpg" alt=" Image name" />
+          <div class="text">
+            <span>Image name</span>
+          </div>
+        </div>
+        <div class="grid-item" src="img/image007.jpg">
+          <img class="image" src="img/image007.jpg" alt=" Image name" />
+          <div class="text">
+            <span>Image name</span>
+          </div>
+        </div>
+        <div class="grid-item" src="img/image008.jpg">
+          <img class="image" src="img/image008.jpg" alt=" Image name" />
+          <div class="text">
+            <span>Image name</span>
+          </div>
+        </div>
+        <div class="grid-item" src="img/image009.jpg">
+          <img class="image" src="img/image009.jpg" alt=" Image name" />
+          <div class="text">
+            <span>Image name</span>
+          </div>
+        </div>
+        <div class="grid-item" src="img/image010.jpg">
+          <img class="image" src="img/image010.jpg" alt=" Image name" />
+          <div class="text">
+            <span>Image name</span>
+          </div>
+        </div>
+        <div class="grid-item" src="img/image011.jpg">
+          <img class="image" src="img/image011.jpg" alt=" Image name" />
+          <div class="text">
+            <span>Image name</span>
+          </div>
+        </div>
+        <div class="grid-item" src="img/image012.jpg">
+          <img class="image" src="img/image012.jpg" alt=" Image name" />
+          <div class="text">
+            <span>Image name</span>
+          </div>
+        </div>
+        <div class="grid-item" src="img/image013.jpg">
+          <img class="image" src="img/image013.jpg" alt=" Image name" />
+          <div class="text">
+            <span>Image name</span>
+          </div>
+        </div>
+        <div class="grid-item" src="img/image014.jpg">
+          <img class="image" src="img/image014.jpg" alt=" Image name" />
+          <div class="text">
+            <span>Image name</span>
+          </div>
+        </div>
+        <div class="grid-item" src="img/image015.jpg">
+          <img class="image" src="img/image015.jpg" alt=" Image name" />
+          <div class="text">
+            <span>Image name</span>
+          </div>
+        </div>
+
+        <div class="grid-item" src="img/image016.jpg">
+          <img class="image" src="img/image016.jpg" alt=" Image name" />
+          <div class="text">
+            <span>Image name</span>
+          </div>
+        </div>
+        <div class="grid-item" src="img/image017.jpg">
+          <img class="image" src="img/image017.jpg" alt=" Image name" />
+          <div class="text">
+            <span>Image name</span>
+          </div>
+        </div>
+        <div class="grid-item" src="img/image018.jpg">
+          <img class="image" src="img/image018.jpg" alt=" Image name" />
+          <div class="text">
+            <span>Image name</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lightbox">
+        <div class="title"></div>
+        <div class="filter"></div>
+        <div class="arrowr"></div>
+        <div class="arrowl"></div>
+        <div class="close"></div>
+      </div>
     </main>
     <footer>
       <div class="footer">
         <p>© 2021 Copyright By Benchrifa, all right reserved</p>
       </div>
     </footer>
-    <script src="js/app.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      var elem = document.querySelector('.grid');
+      var msnry = new Masonry(elem, {
+        // options
+        itemSelector: '.grid-item',
+        gutter: 10,
+      });
+    </script>
+    <script type="module" src="js/app.js"></script>
   </body>
 </html>
